@@ -2,7 +2,6 @@
 import codecs
 
 import markdown
-
 from pyspelling import filters
 
 
