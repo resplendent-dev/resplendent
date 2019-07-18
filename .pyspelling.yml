@@ -1,13 +1,34 @@
 spellchecker: aspell
 
 matrix:
+- name: markdown
+  sources:
+  - ./**/*.md
+  hunspell:
+    d: docs/spelling_wordlist.txt
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - docs/spelling_wordlist.txt
+    output: build/dictionary/mkdocs.dic
+  pipeline:
+  - pyspelling.filters.markdown:
+  - pyspelling.filters.html:
+      comments: false
+      attributes:
+      - title
+      - alt
+      ignores:
+      - code
+      - pre
+  - pyspelling.filters.url:
+
 - name: python
   sources:
-  - setup.py
-  - 'pymodulenamegoeshere/**/*.py'
-  - 'tests/**/*.py'
+  - ./**/*.py
   hunspell:
-    d: docs/src/dictionary/hunspell/en_US
+    d: docs/src/dictionary/hunspell/en_AU
   aspell:
     lang: en
   dictionary:

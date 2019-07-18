@@ -7,10 +7,12 @@ BASEDIR="$( dirname "$( dirname "${THISDIR}" )" )"
 
 source ${BASEDIR}/ci/in_docker/prepare.sh
 
-cd "${BASEDIR}/app"
 # Version independant checks
 PYVER=3.7
+# Run pyspelling in root to check docs
+cd "${BASEDIR}"
 "python${PYVER}" -m pyspelling
+cd "${BASEDIR}/app"
 # Version dependant checks
 for PYVER in ${PYTHONVERS} ; do
   "python${PYVER}" -m flake8 "${MODULES[@]}"
