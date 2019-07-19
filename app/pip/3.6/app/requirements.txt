@@ -1,2 +1,3 @@
 pyspelling
 docutils
+rst2html5

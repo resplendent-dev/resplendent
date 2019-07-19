@@ -1,3 +1,12 @@
+Resplendent 0.2.2 (2019-07-19)
+==============================
+
+Features
+--------
+
+- Use rst2html5 for cleaner processing of reStructuredText.
+
+
 Resplendent 0.2.1 (2019-07-19)
 ==============================
 
