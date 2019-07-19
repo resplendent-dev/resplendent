@@ -10,7 +10,7 @@ import os
 import re
 
 # External Imports
-from setuptools import setup
+from setuptools import find_packages, setup
 
 PACKAGE_NAME = 'resplendent'
 
@@ -62,15 +62,16 @@ setup(
     author_email='tim.gates@iress.com',
     maintainer='Tim Gates',
     maintainer_email='tim.gates@iress.com',
-    packages=[PACKAGE_NAME],
+    packages=find_packages(exclude=['tests']),
     license='GPLv3+',
     description=(
-        'A reStructuredText plugin filter for pyspelling to check spelling errors in reStructuredText during CI checks.'
+        'A reStructuredText plugin filter for pyspelling to check'
+        ' spelling errors in reStructuredText during CI checks.'
     ),
     long_description=load_readme('README.md'),
     long_description_content_type='text/markdown',
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
-    install_requires=[],
+    install_requires=['pyspelling', 'markdown'],
     url='https://github.com/resplendent-dev/resplendent',
     classifiers=[
         'Development Status :: 4 - Beta',
