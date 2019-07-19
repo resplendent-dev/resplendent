@@ -1,4 +1,4 @@
 [tool.towncrier]
-    package = "pymodulenamegoeshere"
+    package = "resplendent"
     package_dir = "app"
     filename = "NEWS.rst"

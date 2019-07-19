@@ -1,0 +1,9 @@
+md
+noqa
+nosec
+pylint
+pyspelling
+README
+reStructuredText
+sexualized
+socio
