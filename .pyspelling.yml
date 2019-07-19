@@ -1,6 +1,23 @@
 spellchecker: aspell
 
 matrix:
+- name: restructuredtext
+  sources:
+  - ./**/*.rst
+  hunspell:
+    d: docs/spelling_wordlist.txt
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - docs/spelling_wordlist.txt
+    output: build/dictionary/restructuredtext.dic
+  pipeline:
+  - resplendent.filters.restructuredtext:
+  - pyspelling.filters.html:
+      comments: false
+  - pyspelling.filters.url:
+
 - name: markdown
   sources:
   - ./**/*.md
