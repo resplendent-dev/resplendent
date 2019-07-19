@@ -71,7 +71,7 @@ setup(
     long_description=load_readme('README.md'),
     long_description_content_type='text/markdown',
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
-    install_requires=['pyspelling', 'docutils'],
+    install_requires=['pyspelling', 'docutils', 'rst2html5'],
     url='https://github.com/resplendent-dev/resplendent',
     classifiers=[
         'Development Status :: 4 - Beta',
