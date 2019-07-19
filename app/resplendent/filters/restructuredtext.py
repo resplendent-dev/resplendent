@@ -8,7 +8,14 @@ from pyspelling import filters
 class MarkdownFilter(filters.Filter):
     """Spelling Python."""
 
-    def get_default_config(self):
+    def __init__(self, options, default_encoding='utf-8'):
+        """Initialization."""
+
+        super().__init__(options, default_encoding)
+        self.markdown = None
+
+    @staticmethod
+    def get_default_config():
         """Get default configuration."""
 
         return {
