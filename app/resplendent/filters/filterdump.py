@@ -1,12 +1,13 @@
-"""reStructuredText filter."""
+"""dump out with processing filter."""
+from __future__ import print_function
+
 import codecs
 
-import docutils.core
 from pyspelling import filters
 
 
-class ReStructuredTextFilter(filters.Filter):
-    """Convert reStructuredText to HTML."""
+class DumpOutFilter(filters.Filter):
+    """Pass through logger."""
 
     @staticmethod
     def get_default_config():
@@ -15,36 +16,30 @@ class ReStructuredTextFilter(filters.Filter):
         }
 
     def filter(self, source_file, encoding):  # noqa A001
-        """Parse reStructuredText file."""
+        """Parse text file."""
 
         with codecs.open(source_file, 'r', encoding=encoding) as fobj:
             text = fobj.read()
         return [filters.SourceText(
-            self._filter(text), source_file, encoding, 'restructuredtext'
+            self._filter(text), source_file, encoding, 'text'
         )]
 
     @staticmethod
     def _filter(text):
-        """Filter reStructuredText"""
-        result = docutils.core.publish_string(
-            text, writer_name='html',
-            settings_overrides={
-                'input_encoding': 'unicode',
-                'output_encoding': 'unicode',
-            },
-        )
-        return result
+        """Filter text"""
+        print(text)
+        return text
 
     def sfilter(self, source):
         """Filter."""
 
         return [filters.SourceText(
             self._filter(source.text), source.context, source.encoding,
-            'restructuredtext'
+            'text'
         )]
 
 
 def get_plugin():
     """Return the filter."""
 
-    return ReStructuredTextFilter
+    return DumpOutFilter

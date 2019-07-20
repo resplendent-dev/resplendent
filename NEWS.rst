@@ -1,3 +1,12 @@
+Resplendent 0.2.3 (2019-07-20)
+==============================
+
+Bugfixes
+--------
+
+- Text was being sent as bytes through filter instead of unicode. (#7)
+
+
 Resplendent 0.2.2 (2019-07-19)
 ==============================
 
@@ -22,4 +31,4 @@ resplendent 0.1.0dev0 (2019-07-15)
 Features
 --------
 
-- Use towncrier for news updates. (#1)
+- spellish Use towncrier for news updates. (#1)
