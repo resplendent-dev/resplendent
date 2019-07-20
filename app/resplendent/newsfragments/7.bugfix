@@ -1,1 +1,0 @@
-Text was being sent as bytes through filter instead of unicode.
