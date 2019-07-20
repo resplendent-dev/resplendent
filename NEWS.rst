@@ -1,3 +1,12 @@
+Resplendent 0.2.3 (2019-07-20)
+==============================
+
+Bugfixes
+--------
+
+- Text was being sent as bytes through filter instead of unicode. (#7)
+
+
 Resplendent 0.2.2 (2019-07-19)
 ==============================
 
