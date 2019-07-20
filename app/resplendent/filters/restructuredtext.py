@@ -2,6 +2,7 @@
 import codecs
 
 import docutils.core
+import rst2html5_
 from pyspelling import filters
 
 
@@ -26,7 +27,9 @@ class ReStructuredTextFilter(filters.Filter):
     @staticmethod
     def _filter(text):
         """Filter reStructuredText"""
-        return docutils.core.publish_string(text, writer_name='html')
+        return docutils.core.publish_string(
+            text, writer=rst2html5_.HTML5Writer(),
+        )
 
     def sfilter(self, source):
         """Filter."""
