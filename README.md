@@ -1,5 +1,5 @@
 # resplendent
-A reStructuredText plugin filter for pyspelling to check spelling errors in reStructuredText during CI checks.
+A reStructuredText plugin filter for pyspelling.
 
 [![Build Status](https://dev.azure.com/timgates/timgates/_apis/build/status/resplendent-dev.resplendent?branchName=master)](https://dev.azure.com/timgates/timgates/_build/latest?definitionId=15&branchName=master)
 [![PyPi version](https://img.shields.io/pypi/v/resplendent.svg)](https://pypi.org/project/resplendent)
@@ -8,6 +8,7 @@ A reStructuredText plugin filter for pyspelling to check spelling errors in reSt
 [![Documentation Status](https://readthedocs.org/projects/resplendent/badge/?version=latest)](https://resplendent.readthedocs.io/en/latest/?badge=latest)
 
 # Additional Documentation:
+* [Online Documentation](https://resplendent.readthedocs.io/en/latest/)
 * [News](NEWS.rst).
 * [Template Updates](COOKIECUTTER_UPDATES.md).
 * [Code of Conduct](CODE_OF_CONDUCT.md).

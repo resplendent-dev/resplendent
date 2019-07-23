@@ -3,6 +3,7 @@ backlink
 Bugfixes
 cookiecutter
 CookieCutter
+resplendent
 cov
 css
 dev
@@ -32,5 +33,6 @@ shellcheck
 socio
 toctree
 towncrier
+txt
 unicode
 xdist

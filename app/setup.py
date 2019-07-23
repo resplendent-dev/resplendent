@@ -65,8 +65,7 @@ setup(
     packages=find_packages(exclude=['tests']),
     license='GPLv3+',
     description=(
-        'A reStructuredText plugin filter for pyspelling to check spelling'
-        ' errors in reStructuredText during CI checks.'
+        'A reStructuredText plugin filter for pyspelling.'
     ),
     long_description=load_readme('README.md'),
     long_description_content_type='text/markdown',
