@@ -21,5 +21,6 @@
     "maintainer_name": "{{ cookiecutter.author_name }}",
     "maintainer_email": "{{ cookiecutter.author_email }}",
     "project_email": "{{ cookiecutter.maintainer_email }}",
+    "app_requirements": ["docutils", "pyspelling"],
     "dictionary": "en_AU"
 }
