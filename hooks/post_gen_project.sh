@@ -11,5 +11,5 @@ git checkout -- \
  app/resplendent/__init__.py \
  app/resplendent/filters/__init__.py \
  app/resplendent/filters/filterdump.py \
- app/resplendent/filters/restructuredtext.py
+ app/resplendent/filters/restructuredtext.py \
  app/resplendent/version.py
