@@ -1,5 +1,6 @@
 azurepipelines
 backlink
+Bugfixes
 cookiecutter
 CookieCutter
 cov
@@ -22,12 +23,14 @@ pytest
 rc
 README
 ReadTheDocs
+resplendent
 reStructuredText
+rst
 setuptools
 sexualized
 shellcheck
 socio
 toctree
 towncrier
+unicode
 xdist
-resplendent
