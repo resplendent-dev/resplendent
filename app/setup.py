@@ -65,13 +65,16 @@ setup(
     packages=find_packages(exclude=['tests']),
     license='GPLv3+',
     description=(
-        'A reStructuredText plugin filter for pyspelling to check'
-        ' spelling errors in reStructuredText during CI checks.'
+        'A reStructuredText plugin filter for pyspelling.'
     ),
     long_description=load_readme('README.md'),
     long_description_content_type='text/markdown',
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
-    install_requires=['pyspelling', 'docutils', 'rst2html5'],
+    install_requires=[
+        elem for elem in
+        'docutils\npyspelling'.split('\n')
+        if elem
+    ],
     url='https://github.com/resplendent-dev/resplendent',
     classifiers=[
         'Development Status :: 4 - Beta',
