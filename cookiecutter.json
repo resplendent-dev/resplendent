@@ -28,5 +28,7 @@
     "cov_fail_under": "40",
     "dictionary": "en_AU",
     "python_requires": ">=3.4",
-    "python_versions": "3.4 3.5 3.6 3.7"
+    "python_versions": "3.4 3.5 3.6 3.7",
+    "classifier_pytwo": "",
+    "classifier_pytwoseven": ""
 }
