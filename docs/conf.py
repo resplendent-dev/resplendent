@@ -12,13 +12,15 @@ Configuration file for the Sphinx documentation builder.
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(
-    os.path.dirname(os.path.dirname(
-        os.path.abspath(sys.modules[__name__].__file__)
-    )),
+app_path = os.path.abspath(os.path.join(
+    '..',
     'app',
-)))
+))
+sys.path.insert(0, app_path)
+if not os.path.isdir(app_path):
+    raise Exception('Failed to locate app path at %r' % (app_path,))
 
+from resplendent import version
 
 # -- Project information -----------------------------------------------------
 
@@ -26,30 +28,8 @@ project = 'resplendent'
 copyright = '2019, Tim Gates'
 author = 'Tim Gates'
 
-
-def read_version():
-    """
-    Read the contents of relative file.
-    """
-    import re
-    import codecs
-    file_path = os.path.join(
-        '..',
-        'app',
-        'resplendent',
-        'version.py',
-    )
-    regex = re.compile('__version__ = [\'\"]([^\'\"]*)[\'\"]')
-    with codecs.open(file_path, encoding='utf-8') as fobj:
-        for line in fobj:
-            mobj = regex.match(line)
-            if mobj:
-                return mobj.group(1)
-    raise Exception('Failed to read version')
-
-
 # The full version, including alpha/beta/rc tags
-release = read_version()
+release = version.__version__
 
 
 # -- General configuration ---------------------------------------------------
