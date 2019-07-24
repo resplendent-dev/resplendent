@@ -1,8 +1,3 @@
-.. resplendent documentation master file, created by
-   sphinx-quickstart on Tue Jul 23 07:42:50 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Documentation for resplendent!
 ================================================================
 
@@ -10,7 +5,10 @@ Documentation for resplendent!
    :maxdepth: 2
    :caption: Contents:
 
-
+Resplendent is a filter for `pyspelling`_. It adds support for converting
+reStructuredText into HTML that can be processed using `pyspelling`_'s
+existing HTML filters. A similar project exists built off the now unmaintained
+`PyEnchant`_ called `sphinx-contrib-spelling`_.
 
 Indices and tables
 ==================
@@ -18,3 +16,7 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. _`pyspelling`: https://github.com/facelessuser/pyspelling
+.. _`PyEnchant`: https://github.com/rfk/pyenchant
+.. _`sphinx-contrib-spelling`: https://github.com/sphinx-contrib/spelling
