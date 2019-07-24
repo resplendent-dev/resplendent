@@ -20,7 +20,6 @@ sys.path.insert(0, app_path)
 if not os.path.isdir(app_path):
     raise Exception('Failed to locate app path at %r' % (app_path,))
 
-from resplendent import version
 
 # -- Project information -----------------------------------------------------
 
@@ -28,8 +27,29 @@ project = 'resplendent'
 copyright = '2019, Tim Gates'
 author = 'Tim Gates'
 
+
+def read_version():
+    """
+    Read the contents of relative file.
+    """
+    import re
+    import codecs
+    file_path = os.path.join(
+        app_path,
+        'resplendent',
+        'version.py',
+    )
+    regex = re.compile('__version__ = [\'\"]([^\'\"]*)[\'\"]')
+    with codecs.open(file_path, encoding='utf-8') as fobj:
+        for line in fobj:
+            mobj = regex.match(line)
+            if mobj:
+                return mobj.group(1)
+    raise Exception('Failed to read version')
+
+
 # The full version, including alpha/beta/rc tags
-release = version.__version__
+release = read_version()
 
 
 # -- General configuration ---------------------------------------------------
