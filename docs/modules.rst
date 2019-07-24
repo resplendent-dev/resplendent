@@ -1,5 +1,5 @@
 resplendent
-=========
+===========
 
 .. toctree::
    :maxdepth: 4

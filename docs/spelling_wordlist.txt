@@ -4,6 +4,7 @@ azurepipelines
 backlink
 Bugfixes
 cobertura
+contrib
 cookiecutter
 CookieCutter
 cov
@@ -23,6 +24,7 @@ nosec
 parallelization
 pipefish
 py
+PyEnchant
 pylint
 PyPi
 pyspelling
@@ -45,5 +47,6 @@ towncrier
 txt
 unanimous
 unicode
+unmaintained
 xdist
 xml
