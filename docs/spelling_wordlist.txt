@@ -6,7 +6,6 @@ Bugfixes
 cobertura
 cookiecutter
 CookieCutter
-resplendent
 cov
 css
 dev
@@ -32,6 +31,8 @@ rc
 README
 ReadTheDocs
 resplendent
+resplendent
+restructuredtext
 reStructuredText
 rst
 setuptools
