@@ -10,6 +10,11 @@ reStructuredText into HTML that can be processed using `pyspelling`_'s
 existing HTML filters. A similar project exists built off the now unmaintained
 `PyEnchant`_ called `sphinx-contrib-spelling`_.
 
+The primary filter resides at:
+
+.. automodule:: resplendent.filters.restructuredtext
+    :members:
+
 Indices and tables
 ==================
 
