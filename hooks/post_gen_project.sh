@@ -8,6 +8,7 @@ TOP="$(dirname "${BASEDIR}")"
 cd "${TOP}"
 git checkout -- \
  NEWS.rst \
+ app/docs \
  app/resplendent/__init__.py \
  app/resplendent/filters/__init__.py \
  app/resplendent/filters/filterdump.py \
