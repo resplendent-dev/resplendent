@@ -9,8 +9,6 @@ cd "${TOP}"
 git checkout -- \
  NEWS.rst \
  docs \
- app/resplendent/__init__.py \
- app/resplendent/filters/__init__.py \
- app/resplendent/filters/filterdump.py \
- app/resplendent/filters/restructuredtext.py \
- app/resplendent/version.py
+ app/pip/3.4/app/requirements.txt \
+ app/resplendent \
+ app/tests
