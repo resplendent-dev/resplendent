@@ -10,4 +10,5 @@ git checkout -- \
  NEWS.rst \
  app/pip/3.4/app/requirements.txt \
  app/resplendent \
- app/tests
+ app/tests \
+ docs/index.rst docs/modules.rst docs/resplendent.rst
