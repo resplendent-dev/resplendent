@@ -8,7 +8,6 @@ TOP="$(dirname "${BASEDIR}")"
 cd "${TOP}"
 git checkout -- \
  NEWS.rst \
- docs \
  app/pip/3.4/app/requirements.txt \
  app/resplendent \
  app/tests
