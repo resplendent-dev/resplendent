@@ -12,13 +12,10 @@ Configuration file for the Sphinx documentation builder.
 
 import os
 import sys
-app_path = os.path.abspath(os.path.join(
+sys.path.insert(0, os.path.abspath(os.path.join(
     '..',
     'app',
-))
-sys.path.insert(0, app_path)
-if not os.path.isdir(app_path):
-    raise Exception('Failed to locate app path at %r' % (app_path,))
+)))
 
 
 # -- Project information -----------------------------------------------------
@@ -35,7 +32,8 @@ def read_version():
     import re
     import codecs
     file_path = os.path.join(
-        app_path,
+        '..',
+        'app',
         'resplendent',
         'version.py',
     )
