@@ -2,7 +2,7 @@
 
 [![Azure Status](https://dev.azure.com/timgates/timgates/_apis/build/status/resplendent-dev.resplendent?branchName=master)](https://dev.azure.com/timgates/timgates/_build/latest?definitionId=15&branchName=master)
 [![Travis Status](https://travis-ci.org/resplendent-dev/resplendent.svg?branch=master)](https://travis-ci.org/resplendent-dev/resplendent)
-[![Appveyor Status](https://ci.appveyor.com/api/projects/status/github/resplendent-dev/resplendent/branch/master?svg=true)](https://ci.appveyor.com/project/resplendent-dev/resplendent)
+[![Appveyor Status](https://ci.appveyor.com/api/projects/status/n12n1eymr9khlmvt/branch/master?svg=true)](https://ci.appveyor.com/project/timgates42/resplendent)
 [![PyPI version](https://img.shields.io/pypi/v/resplendent.svg)](https://pypi.org/project/resplendent)
 [![Python Versions](https://img.shields.io/pypi/pyversions/resplendent.svg)](https://pypi.org/project/resplendent)
 [![PyPI downloads per month](https://img.shields.io/pypi/dm/resplendent.svg)](https://pypi.org/project/resplendent)
@@ -10,6 +10,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/resplendent-dev/resplendent/badge.svg)](https://coveralls.io/github/resplendent-dev/resplendent/)
 
 A reStructuredText plugin filter for pyspelling.
+
+More details can be found in the
+[Online Documentation.](https://resplendent.readthedocs.io/en/latest/)
 
 # Installation
 
@@ -49,10 +52,13 @@ contributions receive appropriate recognition.
 # License
 
 
+Distributed under the terms of the [GPLv3](https://opensource.org/licenses/GPL-3.0)
+license, "resplendent" is free and open source software
+
 
 # Issues
 
-If you encounter any problems, please 
+If you encounter any problems, please
 [file an issue](https://github.com/resplendent-dev/resplendent/issues)
 along with a detailed description.
 
