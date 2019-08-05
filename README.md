@@ -2,7 +2,7 @@
 
 [![Azure Status](https://dev.azure.com/timgates/timgates/_apis/build/status/resplendent-dev.resplendent?branchName=master)](https://dev.azure.com/timgates/timgates/_build/latest?definitionId=15&branchName=master)
 [![Travis Status](https://travis-ci.org/resplendent-dev/resplendent.svg?branch=master)](https://travis-ci.org/resplendent-dev/resplendent)
-[![Appveyor Status](https://ci.appveyor.com/api/projects/status/n12n1eymr9khlmvt/branch/master?svg=true)](https://ci.appveyor.com/project/timgates42/resplendent)
+[![Appveyor Status](https://ci.appveyor.com/api/projects/status/u65kid1ueogx2o13/branch/master?svg=true)](https://ci.appveyor.com/project/timgates42/resplendent)
 [![PyPI version](https://img.shields.io/pypi/v/resplendent.svg)](https://pypi.org/project/resplendent)
 [![Python Versions](https://img.shields.io/pypi/pyversions/resplendent.svg)](https://pypi.org/project/resplendent)
 [![PyPI downloads per month](https://img.shields.io/pypi/dm/resplendent.svg)](https://pypi.org/project/resplendent)
