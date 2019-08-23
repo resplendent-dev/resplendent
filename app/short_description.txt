@@ -1,0 +1,1 @@
+A reStructuredText plugin filter for pyspelling.

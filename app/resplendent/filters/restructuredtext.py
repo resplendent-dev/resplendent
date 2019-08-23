@@ -11,26 +11,28 @@ class ReStructuredTextFilter(filters.Filter):
     @staticmethod
     def get_default_config():
         """Get default configuration."""
-        return {
-        }
+        return {}
 
     def filter(self, source_file, encoding):  # noqa A001
         """Parse reStructuredText file."""
 
-        with codecs.open(source_file, 'r', encoding=encoding) as fobj:
+        with codecs.open(source_file, "r", encoding=encoding) as fobj:
             text = fobj.read()
-        return [filters.SourceText(
-            self._filter(text), source_file, encoding, 'restructuredtext'
-        )]
+        return [
+            filters.SourceText(
+                self._filter(text), source_file, encoding, "restructuredtext"
+            )
+        ]
 
     @staticmethod
     def _filter(text):
         """Filter reStructuredText"""
         result = docutils.core.publish_string(
-            text, writer_name='html',
+            text,
+            writer_name="html",
             settings_overrides={
-                'input_encoding': 'unicode',
-                'output_encoding': 'unicode',
+                "input_encoding": "unicode",
+                "output_encoding": "unicode",
             },
         )
         return result
@@ -38,10 +40,14 @@ class ReStructuredTextFilter(filters.Filter):
     def sfilter(self, source):
         """Filter."""
 
-        return [filters.SourceText(
-            self._filter(source.text), source.context, source.encoding,
-            'restructuredtext'
-        )]
+        return [
+            filters.SourceText(
+                self._filter(source.text),
+                source.context,
+                source.encoding,
+                "restructuredtext",
+            )
+        ]
 
 
 def get_plugin():
