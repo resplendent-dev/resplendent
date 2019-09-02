@@ -1,3 +1,12 @@
+Resplendent 0.3.0 (2019-09-02)
+==============================
+
+Bugfixes
+--------
+
+- Format with black and use more CI tools. (#1)
+
+
 Resplendent 0.2.3 (2019-07-20)
 ==============================
 
