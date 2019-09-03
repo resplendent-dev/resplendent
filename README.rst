@@ -1,11 +1,10 @@
-====================================
+===========
 resplendent
-====================================
+===========
 
 .. image:: https://dev.azure.com/AnthonyShaw/pytest-azurepipelines/_apis/build/status/tonybaloney.pytest-azurepipelines?branchName=master
    :target: https://dev.azure.com/AnthonyShaw/pytest-azurepipelines/_build/latest?definitionId=3?branchName=master
    :alt: Build status
-
 
 .. image:: https://dev.azure.com/timgates/timgates/_apis/build/status/resplendent-dev.resplendent?branchName=master
    :target: https://dev.azure.com/timgates/timgates/_build/latest?definitionId=15&branchName=master
@@ -53,57 +52,79 @@ Installation
 ============
 
 You can install resplendent for
-[Python](https://www.python.org/) via
-[pip](https://pypi.org/project/pip/)
-from [PyPI](https://pypi.org/).
+`Python`_ via `pip`_ from `PyPI`_.
 
-```
-$ pip install resplendent
-```
+.. code-block:: bash
+
+    pip install resplendent
 
 Note: if using Python 3.4 the latest version of lxml only supports python 3.5 and above so install lxml 4.3.4
 
 
-## Prerequisites:
+=============
+Prerequisites
+=============
+
 - docutils
 - pyspelling
 
 
-## Download from PyPI.org
+======================
+Download from PyPI.org
+======================
 
 https://pypi.org/project/resplendent/
 
 
 
-# Contributing
+============
+Contributing
+============
 
 Contributions are very welcome, consider using the
-[file an issue](https://github.com/resplendent-dev/resplendent/issues)
+`file an issue`_
 to discuss the work before beginning, but if you already have a Pull Request
 ready then this is no problem, please submit it and it will be very gratefully
-considered. The [Contribution Guidelines](CONTRIBUTING.md)
+considered. The `Contribution Guidelines`_
 outlines the resplendent commitment to ensuring all
 contributions receive appropriate recognition.
 
-# License
+=======
+License
+=======
 
 
-Distributed under the terms of the [GPLv3](https://opensource.org/licenses/GPL-3.0)
+Distributed under the terms of the `GPLv3`_
 license, "resplendent" is free and open source software
 
 
-# Issues
+======
+Issues
+======
 
 If you encounter any problems, please
-[file an issue](https://github.com/resplendent-dev/resplendent/issues)
+`file an issue`_
 along with a detailed description.
 
-# Additional Documentation:
+========================
+Additional Documentation
+========================
 
-* [Online Documentation](https://resplendent.readthedocs.io/en/latest/)
-* [News](NEWS.rst).
-* [Template Updates](COOKIECUTTER_UPDATES.md).
-* [Code of Conduct](CODE_OF_CONDUCT.md).
-* [Contribution Guidelines](CONTRIBUTING.md).
+- `Online Documentation`_
+- `News`_
+- `Template Updates`_
+- `Code of Conduct`_
+- `Contribution Guidelines`_
 
 .. _`Online Documentation`: https://resplendent.readthedocs.io/en/latest/
+.. _`News`: NEWS.rst
+.. _`Template Updates`: COOKIECUTTER_UPDATES.md
+.. _`Code of Conduct`: CODE_OF_CONDUCT.md
+.. _`Contribution Guidelines`: CONTRIBUTING.md
+.. _`Python`: https://www.python.org/
+.. _`pip`: https://pypi.org/project/pip/
+.. _`PyPI`: https://pypi.org/
+.. _`file an issue`: https://github.com/resplendent-dev/resplendent/issues
+.. _`GPLv3`: https://opensource.org/licenses/GPL-3.0
+
+
