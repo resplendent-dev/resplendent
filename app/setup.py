@@ -57,10 +57,13 @@ setup(
     maintainer="Tim Gates",
     maintainer_email="tim.gates@iress.com",
     packages=find_packages(exclude=["tests"]),
-    license="GPLv3",
-    description=load_include("short_description.txt").strip(),
-    long_description=load_include("README.rst", transform=True),
-    long_description_content_type="text/x-rst",
+    license="GPLv3+",
+    description=load_include("short_description.txt")
+    .replace("\n", " ")
+    .replace("\r", "")
+    .strip(),
+    long_description=load_include("README.md", transform=True),
+    long_description_content_type="text/markdown",
     python_requires=">=3.4",
     install_requires=[
         elem.strip()
