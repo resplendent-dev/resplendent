@@ -59,8 +59,8 @@ setup(
     packages=find_packages(exclude=["tests"]),
     license="GPLv3+",
     description=load_include("short_description.txt"),
-    long_description=load_include("README.md", transform=True),
-    long_description_content_type="text/markdown",
+    long_description=load_include("README.rst", transform=True),
+    long_description_content_type="text/x-rst",
     python_requires=">=3.4",
     install_requires=[
         elem.strip()
