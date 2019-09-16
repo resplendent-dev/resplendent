@@ -3,6 +3,7 @@ import codecs
 
 import docutils.core
 from pyspelling import filters
+
 from resplendent.util import exclog
 
 
