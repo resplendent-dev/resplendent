@@ -65,6 +65,12 @@ setup(
     long_description=load_include("README.md", transform=True),
     long_description_content_type="text/markdown",
     python_requires=">=3.4",
+    test_suite="tests",
+    test_requires=[
+        elem.strip()
+        for elem in load_include("test_requires.txt").splitlines()
+        if elem.strip()
+    ],
     install_requires=[
         elem.strip()
         for elem in load_include("requirements.txt").splitlines()
