@@ -4,6 +4,8 @@ import codecs
 import docutils.core
 from pyspelling import filters
 
+from resplendent.util import exclog
+
 
 class ReStructuredTextFilter(filters.Filter):
     """Convert reStructuredText to HTML."""
@@ -13,6 +15,7 @@ class ReStructuredTextFilter(filters.Filter):
         """Get default configuration."""
         return {}
 
+    @exclog
     def filter(self, source_file, encoding):  # noqa A001
         """Parse reStructuredText file."""
 
@@ -38,6 +41,7 @@ class ReStructuredTextFilter(filters.Filter):
         )
         return result
 
+    @exclog
     def sfilter(self, source):
         """Filter."""
 
