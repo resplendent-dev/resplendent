@@ -2,6 +2,8 @@
 Test modules for resplendent.__main__
 """
 
+from resplendent.__main__ import main
+
 
 def test_main():
     """
@@ -10,8 +12,6 @@ def test_main():
     with a result of `None`
     """
     # Setup
-    from resplendent.__main__ import main
-
     # Exercise
     result = main()  # pylint: disable=assignment-from-no-return
     # Verify
