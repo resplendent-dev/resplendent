@@ -36,7 +36,7 @@ class ReStructuredTextFilter(filters.Filter):
             settings_overrides={
                 "input_encoding": "unicode",
                 "output_encoding": "unicode",
-                "report_level": "quiet",
+                "report_level": 5,
             },
         )
         return result
