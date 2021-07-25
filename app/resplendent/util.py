@@ -2,8 +2,6 @@
 Common utilities for resplendent.
 """
 
-import logging
-
 from logdecorator import log_exception
 
 exclog = log_exception(  # pylint: disable=invalid-name
