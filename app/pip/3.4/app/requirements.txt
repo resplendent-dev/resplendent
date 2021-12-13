@@ -1,4 +1,4 @@
 docutils
-lxml==4.6.3
+lxml==4.6.5
 pyspelling
 logdecorator
